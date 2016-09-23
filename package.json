@@ -1,0 +1,15 @@
+{
+  "name": "postcss-replace-property",
+  "version": "0.1.0",
+  "description": "Replace value or delete property in a given selector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrei Kost",
+  "license": "ISC",
+  "dependencies": {
+    "postcss": "^5.2.0",
+    "underscore": "^1.8.3"
+  }
+}
