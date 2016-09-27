@@ -22,7 +22,7 @@ module.exports = postcss.plugin('postCssReplaceProperty', function postCssReplac
 		
 			rule.walkDecls(opts.property, function (decl, i) {
 				var value = decl.value;
-				// height: 1em;
+
 				if (value.indexOf( opts.value ) !== -1) {
 					if(opts.replacement) {
 						decl.value = opts.replacement;
@@ -30,6 +30,7 @@ module.exports = postcss.plugin('postCssReplaceProperty', function postCssReplac
 						decl.remove();
 					}
 				}
+				
 			});
 		});
 	}
